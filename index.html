@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🌦️ WeatherEase</h1>
+    <p class="tagline">Check how comfortable the weather will be for your outdoor plans!</p>
+
+    <form id="weatherForm">
+      <label>Where is your event happening?</label>
+      <input type="number" step="0.001" id="lat" placeholder="Latitude (e.g., 9.712)" required>
+      <input type="number" step="0.001" id="lon" placeholder="Longitude (e.g., 76.695)" required>
+
+      <label>When is your event?</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Check Weather</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
